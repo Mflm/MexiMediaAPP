@@ -1,0 +1,76 @@
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>MexiMedia</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		
+		<!-- FontAwesome - http://fortawesome.github.io/Font-Awesome/ -->
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+
+		<!-- jQueryMobileCSS - original without styling -->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+
+		<!-- nativeDroid core CSS -->
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.css" />
+
+		<!-- nativeDroid: Light/Dark -->
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.light.css"  id='jQMnDTheme' />
+
+		<!-- nativeDroid: Color Schemes -->
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.color.blue.css" id='jQMnDColor' />
+
+		<!-- jQuery / jQueryMobile Scripts -->
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+
+
+    </head>
+    <body>
+        
+    <div data-role="page" data-theme='b'>
+
+
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+           
+            <h1>MexiMedia</h1>
+        </div>
+        
+        <div data-role="content">   
+	        <div class='inset'>
+            <section>
+            <img src="img/headerG.JPG" alt="Respond" />
+            </section>
+	        	<ul data-nativedroid-plugin='gallery'>
+				<li style='background-image:url("img/Ga2.JPG")' data-image-large='img/Ga.JPG' data-image-thumb='img/Ga2.JPG'><div class='closeTrigger'><i class='icon-remove'></i> Cerrar</div><span>Grabado en vidrio</span></li>
+			
+           <li style='background-image:url("img/Gb2.JPG")' data-image-large='img/Gb.JPG' data-image-thumb='img/Gb2.JPG'><div class='closeTrigger'><i class='icon-remove'></i> Cerrar</div><span>Grabado en metal</span></li>
+			
+                
+				<div class='overlay'></div>
+ 			</ul>
+				
+					<a href="servicios.html" data-ajax="false"><i class='fa fa-reply'></i> Regresar</a>
+                   
+	        </div>
+		</div>
+		
+<!--		<div data-role="footer" class="ui-bar" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+            <h1 class="ui-title" role="heading" aria-level="1">Hi I'm a fixed footer.</h1>
+		</div> !-->
+
+		<div data-position="fixed" data-tap-toggle="false" data-role="footer" data-tap-toggle="false" data-theme='b'>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="index.html" data-ajax="false"><i class='blIcon fa fa-users'></i>Acerca</a></li>
+					<li><a href="ubicacion.html" data-ajax="false"><i class='blIcon fa fa-map-marker'></i>Ubicacion</a></li>
+					<li><a href="servicios.html" data-ajax="false"><i class='blIcon fa fa-camera-retro'></i>Servicios</a></li>
+                    <li><a href="contacto.html" data-ajax="false"><i class='blIcon fa fa-facebook'></i>Facebook</a></li>
+				</ul>
+			</div>
+		</div>
+
+    </div>
+     <script src="js/nativedroid.script.js"></script>
+    </body>
+</html>

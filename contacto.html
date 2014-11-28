@@ -1,0 +1,122 @@
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>MexiMedia</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		
+		<!-- FontAwesome - http://fortawesome.github.io/Font-Awesome/ -->
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+
+		<!-- jQueryMobileCSS - original without styling -->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+
+		<!-- nativeDroid core CSS -->
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.css" />
+
+		<!-- nativeDroid: Light/Dark -->
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.light.css"  id='jQMnDTheme' />
+
+		<!-- nativeDroid: Color Schemes -->
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.color.blue.css" id='jQMnDColor' />
+
+		<!-- jQuery / jQueryMobile Scripts -->
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+ 
+  <!-- Include jquery.ibacor-fb-streaming -->
+		<script src="js/jquery.ibacor-fb-streaming.min.js"></script>
+
+		<!-- Configuration your facebook_id & facebook_access_token -->
+		<script>
+			ibacor_fb_streaming(
+				ibacor_fb_id = 386722028062139, 
+				ibacor_fb_token = 'ibacor.com_apps'
+			);
+		</script>
+        
+        <!-- Custom your style -->
+		<link type="text/css" rel="stylesheet" href="css/jquery.ibacor-fb-streaming.css" />
+        <!-- Include jQuery fancybox -->
+		<link type="text/css" rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"/>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+		<script>
+			$( document ).ready(function() {	   
+				$(".ibacor_popup").fancybox({   
+					'width'  : '90%',
+					'height'  : '90%',
+					'autoScale'  : false,
+					'transitionIn'  : 'none',
+					'transitionOut'  : 'none',
+					'type'  : 'iframe'
+				});
+			});
+		</script>
+		<style>
+			.fancybox-skin {
+				background: none
+			}
+			.fancybox-opened .fancybox-skin {
+				-webkit-box-shadow: none;
+				-moz-box-shadow: none;
+				box-shadow: none
+			}
+		</style>
+
+    </head>
+    <body>
+        
+    <div data-role="page" data-theme='b'>
+
+
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+           
+            <h1>MexiMedia</h1>
+           
+        </div>
+        
+        <div id="ibacor_fb_content" style="margin-top:5px;">
+
+	        	<h1>Facebook MexiMedia</h1>
+	  <!-- Your facebook Profile -->
+			<div class="ibacor_fb_profile"></div>
+
+			<!-- Your facebook streaming -->
+			<div class="ibacor_fb_streaming"></div>
+			
+		</div>
+        
+        <div data-role="content">   
+	        <div class='inset'>
+            
+	        	<div data-role="page" id="news" data-theme="z">
+  <div data-role="header" data-position="fixed" data-theme="z">
+    <h1>News</h1>
+    <a href="#home" data-icon="home" class="ui-btn-right" data-iconpos="notext" data-transition="slidedown" data-theme="x">Home</a>
+  </div>
+  <div data-role="content">
+    <ul data-role="listview" data-theme="z" data-inset="true" id="newslist"></ul>
+  </div>
+</div>
+	        </div>
+		</div>
+		
+
+
+		<div data-position="fixed" data-tap-toggle="false" data-role="footer" data-tap-toggle="false" data-theme='b'>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="index.html" data-ajax="false"><i class='blIcon fa fa-users'></i>Acerca</a></li>
+					<li><a href="ubicacion.html" data-ajax="false"><i class='blIcon fa fa-map-marker'></i>Ubicacion</a></li>
+					<li><a href="servicios.html" data-ajax="false"><i class='blIcon fa fa-camera-retro'></i>Servicios</a></li>
+                    <li><a href="contacto.html" data-ajax="false"><i class='blIcon fa fa-facebook'></i>Facebook</a></li>
+				</ul>
+			</div>
+		</div>
+
+    </div>
+    
+    </body>
+</html>

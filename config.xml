@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+ 
+ <widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.phonegap.MexiMedia"
+        version   = "1.0.0">
+ 
+<!-- versionCode is optional and Android only -->
+<name>MexiMedia</name>
+<description>
+Agencia de Publicidad
+ </description>
+<author href="http://www.meximedia.mx" email="marco.francisco.mendia@gmail.com">
+ MFLM
+ </author>
+
+
+    <icon src="icon.png" />
+ <gap:splash src="img/SplashM1.PNG" />
+ <gap:splash src="img/SplashM1.PNG" width="320" height="480" />
+ <gap:splash src="img/SplashM2.PNG" width="640" height="960" />
+ <gap:splash src="img/SplashM3.PNG" width="768" height="1024" />
+ 
+</widget>
+
+
+

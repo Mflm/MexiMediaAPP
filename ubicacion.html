@@ -1,0 +1,89 @@
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>MexiMedia</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		
+		<!-- FontAwesome - http://fortawesome.github.io/Font-Awesome/ -->
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+
+		<!-- jQueryMobileCSS - original without styling -->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+
+		<!-- nativeDroid core CSS -->
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.css" />
+
+		<!-- nativeDroid: Light/Dark -->
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.light.css"  id='jQMnDTheme' />
+
+		<!-- nativeDroid: Color Schemes -->
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.color.blue.css" id='jQMnDColor' />
+
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+
+		<script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+		
+		<script type="text/javascript" charset="utf-8" src="js/jquery.ui.map.js"></script>
+<script type="text/javascript">
+				var mobileDemo = { 'center': '20.0819604,-98.3707701', 'zoom': 17 };
+		$(function() {
+				$('#map_canvas').gmap({'center': mobileDemo.center, 'zoom': mobileDemo.zoom, 'disableDefaultUI':true, 'callback': function() {
+						var self = this;
+						self.addMarker({'position': this.get('map').getCenter() }).click(function() {
+							self.openInfoWindow({ 'content': 'Mexi Media!' }, this);
+						});
+					}}); 
+				}).load('basic_map');
+			        </script>
+
+    </head>
+    <body>
+        
+    <div data-role="page" data-theme='b'>
+
+
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+           
+            <h1>MexiMedia</h1>
+        </div>
+        
+        <div data-role="content"> 
+        <div id="map_canvas" style="width:100%;height:250px"></div>  
+        
+	        <div class='inset'>
+           <h2>Direcci&oacute;n:</h2>
+           <p>Avenida Hidalgo Pte. #109 Local 5, Col. Centro C.P. 43600, Tulancingo de Bravo, Hidalgo</p>
+	        	
+                <h2>Tel&eacute;fonos:</h2>
+<a href="tel:7757425823">7757425823</a>
+<br>
+<a href="tel:7757425823">7751117044</a>
+
+ <h2>E-mail:</h2>
+<a href="meximedia0@gmail.com">meximedia0@gmail.com</a>
+<br>
+<a href="meximedialuminosos@gmail.com">meximedialuminosos@gmail.com</a>
+	        </div>
+		</div>
+		
+<!--		<div data-role="footer" class="ui-bar" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+            <h1 class="ui-title" role="heading" aria-level="1">Hi I'm a fixed footer.</h1>
+		</div> !-->
+
+		<div data-position="fixed" data-tap-toggle="false" data-role="footer" data-tap-toggle="false" data-theme='b'>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="index.html" data-ajax="false"><i class='blIcon fa fa-users'></i>Acerca</a></li>
+					<li><a href="ubicacion.html" data-ajax="false"><i class='blIcon fa fa-map-marker'></i>Ubicacion</a></li>
+					<li><a href="servicios.html" data-ajax="false"><i class='blIcon fa fa-camera-retro'></i>Servicios</a></li>
+                    <li><a href="contacto.html" data-ajax="false"><i class='blIcon fa fa-facebook'></i>Facebook</a></li>
+				</ul>
+			</div>
+		</div>
+
+    </div>
+    
+    </body>
+</html>
