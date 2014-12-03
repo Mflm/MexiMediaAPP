@@ -18,7 +18,7 @@ Agencia de Publicidad
 <plugin name="TelephoneNumber" 
         value="com.simonmacdonald.cordova.plugins.TelephoneNumber"/>
 
-<uses-permission android:name="android.permission.READ_PHONE_STATE"> </uses-permission>
+<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
     <icon src="icon.png" />
  <gap:splash src="img/SplashM1.PNG" />
  <gap:splash src="img/SplashM1.PNG" width="320" height="480" />
